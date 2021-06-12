@@ -6,7 +6,7 @@
   <link href="https://biancachien.github.io/atom.xml" rel="self"/>
   
   <link href="https://biancachien.github.io/"/>
-  <updated>2021-06-12T04:06:15.118Z</updated>
+  <updated>2021-06-12T12:53:26.231Z</updated>
   <id>https://biancachien.github.io/</id>
   
   <author>
@@ -18,34 +18,22 @@
   
   <entry>
     <title>Angular 學習筆記 - 專案介紹 &amp; CLI</title>
-    <link href="https://biancachien.github.io/2021/06/11/Angular-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%B0%88%E6%A1%88%E4%BB%8B%E7%B4%B9-CLI/"/>
-    <id>https://biancachien.github.io/2021/06/11/Angular-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%B0%88%E6%A1%88%E4%BB%8B%E7%B4%B9-CLI/</id>
-    <published>2021-06-12T04:06:15.000Z</published>
-    <updated>2021-06-12T04:06:15.118Z</updated>
+    <link href="https://biancachien.github.io/2021/06/12/Angular-note01/"/>
+    <id>https://biancachien.github.io/2021/06/12/Angular-note01/</id>
+    <published>2021-06-13T02:39:00.000Z</published>
+    <updated>2021-06-12T12:53:26.231Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Angular-學習筆記-專案介紹-amp-CLI"><a href="#Angular-學習筆記-專案介紹-amp-CLI" class="headerlink" title="Angular 學習筆記 - 專案介紹 &amp; CLI"></a>Angular 學習筆記 - 專案介紹 &amp; CLI</h1><h2 id="設定檔"><a href="#設定檔" class="headerlink" title="設定檔"></a><strong>設定檔</strong></h2><p><img src="https://i.imgur.com/TsEGF3o.jpg" alt="menu"></p><ul><li>angular.json：angular.cli的設定檔。</li><li>.editotconfig：編輯器的設定檔。</li><li>package.json：npm的設定檔。</li><li>tsconfig.json：存放TypeScript相關設定。</li><li>tslint：程式碼檢查規則的存放處。</li><li>protractor.conf.js：實作end-2-end testing的設定檔。</li><li>e2e資料夾：存放end-to-end testing所有測試的指定檔。</li></ul><h2 id="主檔案"><a href="#主檔案" class="headerlink" title="主檔案"></a><strong>主檔案</strong></h2><p><img src="https://i.imgur.com/fKLGgkD.jpg" alt="main"></p><ul><li>assets：存放靜態檔案。</li><li>environments：存放angular環境變數。</li><li>favicon：網頁頁籤左上角的顯示小圖示。</li><li>html：index.html。</li><li>css：style.scss。</li><li>js：mian.ts(JS主程式的進入點)。</li><li>poltfills.ts：使舊版本瀏覽器也可使用新語法。</li></ul><h2 id="用Angular-CLI-建立-component"><a href="#用Angular-CLI-建立-component" class="headerlink" title="用Angular CLI 建立 component"></a><strong>用Angular CLI 建立 component</strong></h2><p>會自動生成component，並設定module裡的資料<br><code> ng generate component名稱 </code> 或 <code>ng g c component名稱</code></p><p>可產生的類型(程式碼產生器)<br><code> ng generate -h </code></p><h2 id="一些常用快速鍵"><a href="#一些常用快速鍵" class="headerlink" title="一些常用快速鍵"></a><strong>一些常用快速鍵</strong></h2><p>可以在兩頁面間來回切換<br><code> alt + o </code></p><p>可產生的類型(程式碼產生器)<br><code> ng generate -h</code></p><h2 id="component-顯示在頁面上的方法"><a href="#component-顯示在頁面上的方法" class="headerlink" title="component 顯示在頁面上的方法"></a><strong>component 顯示在頁面上的方法</strong></h2><p>貼在要顯示的html上<br><code>&lt;app-page1&gt;&lt;/app-page1&gt;</code></p>]]></content>
+    
+    
+    <summary type="html">note</summary>
     
     
     
+    <category term="Angular" scheme="https://biancachien.github.io/categories/Angular/"/>
     
     
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://biancachien.github.io/2021/06/11/hello-world/"/>
-    <id>https://biancachien.github.io/2021/06/11/hello-world/</id>
-    <published>2021-06-12T03:54:49.022Z</published>
-    <updated>2021-06-12T03:54:49.022Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
+    <category term="Angular" scheme="https://biancachien.github.io/tags/Angular/"/>
     
   </entry>
   
