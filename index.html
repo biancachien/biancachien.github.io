@@ -184,6 +184,86 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://biancachien.github.io/2021/06/13/Angular/Angular-note-02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="前端小白">
+      <meta itemprop="description" content="Happy Coding!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FrontEndDaily">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/13/Angular/Angular-note-02/" class="post-title-link" itemprop="url">Angular - 資料繫結方法(一) - 內嵌繫結(Interpolation)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2021-06-13 01:55:07 / 修改時間：02:01:00" itemprop="dateCreated datePublished" datetime="2021-06-13T01:55:07-08:00">2021-06-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Angular/" itemprop="url" rel="index"><span itemprop="name">Angular</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><p>語法 <code>&#123;&#123; property &#125;&#125;</code></p>
+<p>概念：單向繫結，由component.ts將變數單向綁定到template(html)畫面上。</p>
+<h2 id="運用在標籤"><a href="#運用在標籤" class="headerlink" title="運用在標籤"></a><strong>運用在標籤</strong></h2><p><strong>HTML</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h3&gt;&#123;&#123; title &#125;&#125;&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>TS</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Component &#125; from &#x27;@angular/core&#x27;;</span><br><span class="line"></span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: &#x27;app-root&#x27;,</span><br><span class="line">  templateUrl: &#x27;./app.component.html&#x27;,</span><br><span class="line">  styleUrls: [&#x27;./app.component.scss&#x27;]</span><br><span class="line">&#125;)</span><br><span class="line">export class AppComponent &#123;</span><br><span class="line">  title = &#x27;前端小白&#x27;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="運用在屬性"><a href="#運用在屬性" class="headerlink" title="運用在屬性"></a><strong>運用在屬性</strong></h2><p><strong>HTML</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h3&gt;&lt;a href=&quot;&#123;&#123; url &#125;&#125;&quot;&gt;Google&lt;/a&gt;&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>TS</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Component &#125; from &#x27;@angular/core&#x27;;</span><br><span class="line"></span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: &#x27;app-root&#x27;,</span><br><span class="line">  templateUrl: &#x27;./app.component.html&#x27;,</span><br><span class="line">  styleUrls: [&#x27;./app.component.scss&#x27;]</span><br><span class="line">&#125;)</span><br><span class="line">export class AppComponent &#123;</span><br><span class="line">  url = &#x27;www.google.com&#x27;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="動態綁定"><a href="#動態綁定" class="headerlink" title="動態綁定"></a><strong>動態綁定</strong></h2><p><strong>HTML</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h3&gt;&lt;a href=&quot;&#123;&#123; url &#125;&#125;&quot;&gt;&#123;&#123;title&#125;&#125;&lt;/a&gt;&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>TS</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Component &#125; from &#x27;@angular/core&#x27;;</span><br><span class="line"></span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: &#x27;app-root&#x27;,</span><br><span class="line">  templateUrl: &#x27;./app.component.html&#x27;,</span><br><span class="line">  styleUrls: [&#x27;./app.component.scss&#x27;]</span><br><span class="line">&#125;)</span><br><span class="line">export class AppComponent &#123;</span><br><span class="line">  title = &#x27;前端小白&#x27;;</span><br><span class="line">  url = &#x27;www.google.com&#x27;;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    setTimeout(() =&gt; &#123;</span><br><span class="line">      this.title = &quot;Google&quot;;</span><br><span class="line">    &#125;, 2000);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://biancachien.github.io/2021/06/12/Angular/Angular-note-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -327,7 +407,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
