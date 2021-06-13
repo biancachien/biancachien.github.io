@@ -54,7 +54,7 @@
   <entry>
     <title>Angular 02- 資料繫結方法(一) - 內嵌繫結(Interpolation)</title>
     <url>/2021/06/13/Angular/Angular-note-02/</url>
-    <content><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><p>語法 <code>&#123;&#123; property &#125;&#125;</code></p>
+    <content><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><p>語法 <code>&#123;&#123; value &#125;&#125;</code></p>
 <p>概念：單向繫結，由component.ts將變數單向綁定到template(html)畫面上。</p>
 <h2 id="運用在標籤"><a href="#運用在標籤" class="headerlink" title="運用在標籤"></a><strong>運用在標籤</strong></h2><p><strong>HTML</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;&#123;&#123; title &#125;&#125;&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
