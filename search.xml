@@ -26,10 +26,12 @@
 <h2 id="用Angular-CLI-建立-component"><a href="#用Angular-CLI-建立-component" class="headerlink" title="用Angular CLI 建立 component"></a><strong>用Angular CLI 建立 component</strong></h2><p><strong>輸入指令</strong></p>
 <p>會自動生成component，並設定module裡的資料<br>輸入<code> ng generate component 名稱 </code> 或 <code>ng g c component 名稱</code><br><img src="https://i.imgur.com/r0euXIM.jpg" alt="ng generate">除了建立上述檔案外，還修改了app.module.ts<br><img src="https://i.imgur.com/A1GeQza.jpg" alt="module"></p>
 <p><strong>讓component出現在主畫面上的方式</strong><br><img src="https://i.imgur.com/sCqoMA4.jpg"></p>
-<p>可產生的類型(程式碼產生器)<br><code> ng generate -h </code></p>
-<h2 id="一些常用快速鍵"><a href="#一些常用快速鍵" class="headerlink" title="一些常用快速鍵"></a><strong>一些常用快速鍵</strong></h2><p>可以在兩頁面間來回切換<br><code> alt + o </code></p>
+<p>可產生的程式碼類型範本皆在此(程式碼產生器)<br><code> ng generate -h </code></p>
+<p><strong>一些常用快速鍵</strong></p>
+<p>可以在兩頁面間來回切換<br><code> alt + o </code></p>
 <p>可產生的類型(程式碼產生器)<br><code> ng generate -h</code></p>
-<h2 id="component-顯示在頁面上的方法"><a href="#component-顯示在頁面上的方法" class="headerlink" title="component 顯示在頁面上的方法"></a><strong>component 顯示在頁面上的方法</strong></h2><p>貼在要顯示的html上<br><code>&lt;app-page1&gt;&lt;/app-page1&gt;</code></p>
+<p><strong>component 顯示在頁面上的方法</strong></p>
+<p>貼在要顯示的html上<br><code>&lt;app-page1&gt;&lt;/app-page1&gt;</code></p>
 ]]></content>
       <categories>
         <category>Angular</category>
