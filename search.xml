@@ -1,57 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Angular 01- 專案介紹 &amp; CLI</title>
-    <url>/posts/null/</url>
-    <content><![CDATA[<h1 id="Angular-專案介紹-amp-CLI"><a href="#Angular-專案介紹-amp-CLI" class="headerlink" title="Angular - 專案介紹 &amp; CLI"></a>Angular - 專案介紹 &amp; CLI</h1><h2 id="專案介紹"><a href="#專案介紹" class="headerlink" title="專案介紹"></a><strong>專案介紹</strong></h2><p><strong>設定檔</strong></p>
-<p><img src="https://i.imgur.com/TsEGF3o.jpg" alt="menu"></p>
-<ul>
-<li>angular.json：angular.cli的設定檔。</li>
-<li>.editotconfig：編輯器的設定檔。</li>
-<li>package.json：npm的設定檔。</li>
-<li>tsconfig.json：存放TypeScript相關設定。</li>
-<li>tslint：程式碼檢查規則的存放處。</li>
-<li>protractor.conf.js：實作end-2-end testing的設定檔。</li>
-<li>e2e資料夾：存放end-to-end testing所有測試的指定檔。</li>
-</ul>
-<p><strong>主檔案</strong></p>
-<p><img src="https://i.imgur.com/fKLGgkD.jpg" alt="main"></p>
-<ul>
-<li>assets：存放靜態檔案。</li>
-<li>environments：存放angular環境變數。</li>
-<li>favicon：網頁頁籤左上角的顯示小圖示。</li>
-<li>html：index.html。</li>
-<li>css：style.scss。</li>
-<li>js：mian.ts(JS主程式的進入點)。</li>
-<li>poltfills.ts：使舊版本瀏覽器也可使用新語法。</li>
-</ul>
-<h2 id="用Angular-CLI-建立-component"><a href="#用Angular-CLI-建立-component" class="headerlink" title="用Angular CLI 建立 component"></a><strong>用Angular CLI 建立 component</strong></h2><p>輸入<code>ng generate component 名稱</code> 或簡寫 <code>ng g c component 名稱</code>會自動生成component，並設定module裡的資料</p>
-<p><img src="https://i.imgur.com/r0euXIM.jpg" alt="ng generate"></p>
-<p>除了自動建立上述檔案外，還修改了app.module.ts</p>
-<p><img src="https://i.imgur.com/A1GeQza.jpg" alt="module"></p>
-<p><strong>讓component出現在主畫面上的方式</strong></p>
-<p>將<code>&lt;app-page1&gt;&lt;/app-page1&gt;</code>貼在要顯示的html上</p>
-<p><img src="https://i.imgur.com/sCqoMA4.jpg"></p>
-<p><strong>常用快速鍵</strong></p>
-<p><code>alt + o</code>：快速切換ts檔和html檔</p>
-<p><code>ng generate -h</code>：可產生的程式碼類型範本皆在此(程式碼產生器)</p>
-<p><strong>發行與部屬Angular應用程式</strong></p>
-<p><code>ng build</code>：會打包成一個dist檔</p>
-<p><code>ng build --prod</code>：會壓縮成更小的dist檔</p>
-<p><strong>升級新版Angular應用程式</strong></p>
-<p><code>ng update</code>：升級新版Angular應用程式的方法</p>
-<p><code>npm outdated -g</code>：看是否是最新版 </p>
-<p><code>npm install -g @angular/cli</code>：安裝最新版</p>
-<p><a href="//https://update.angular.io/">angular-update-guide</a>：可看版本升級須注意事項</p>
-]]></content>
-      <categories>
-        <category>Angular</category>
-      </categories>
-      <tags>
-        <tag>Angular</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Angular 02- 資料繫結方法(一) - 內嵌繫結(Interpolation)</title>
     <url>/posts/ec3b586/</url>
     <content><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><p>語法 <code>&#123;&#123; value &#125;&#125;</code></p>
