@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>Angular 學習筆記 - 專案介紹 &amp; CLI</title>
-    <url>/2021/06/12/Angular/Angular-note01/</url>
-    <content><![CDATA[<h1 id="Angular-學習筆記-專案介紹-amp-CLI"><a href="#Angular-學習筆記-專案介紹-amp-CLI" class="headerlink" title="Angular 學習筆記 - 專案介紹 &amp; CLI"></a>Angular 學習筆記 - 專案介紹 &amp; CLI</h1><h2 id="專案介紹"><a href="#專案介紹" class="headerlink" title="專案介紹"></a><strong>專案介紹</strong></h2><p><strong>設定檔</strong></p>
+    <url>/2021/06/12/Angular/Angular-note-01/</url>
+    <content><![CDATA[<h1 id="Angular-專案介紹-amp-CLI"><a href="#Angular-專案介紹-amp-CLI" class="headerlink" title="Angular - 專案介紹 &amp; CLI"></a>Angular - 專案介紹 &amp; CLI</h1><h2 id="專案介紹"><a href="#專案介紹" class="headerlink" title="專案介紹"></a><strong>專案介紹</strong></h2><p><strong>設定檔</strong></p>
 <p><img src="https://i.imgur.com/TsEGF3o.jpg" alt="menu"></p>
 <ul>
 <li>angular.json：angular.cli的設定檔。</li>
