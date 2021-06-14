@@ -6,7 +6,7 @@
   <link href="https://biancachien.github.io/atom.xml" rel="self"/>
   
   <link href="https://biancachien.github.io/"/>
-  <updated>2021-06-14T07:05:11.597Z</updated>
+  <updated>2021-06-14T07:27:45.724Z</updated>
   <id>https://biancachien.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Angular 08- 指令類型(一)-元件型指令(Component Directives)</title>
+    <link href="https://biancachien.github.io/2021/06/13/Angular/Angular-note-08/"/>
+    <id>https://biancachien.github.io/2021/06/13/Angular/Angular-note-08/</id>
+    <published>2021-06-14T07:27:13.000Z</published>
+    <updated>2021-06-14T07:27:45.724Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><ul><li>語法：<br><code>&lt;app-header&gt;&lt;/app-header&gt;</code><br><code>&lt;app-footer&gt;&lt;/app-footer&gt;</code></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;&gt;&lt;/a&gt;&lt;strong&gt;基本概念&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;語法：&lt;br&gt;&lt;code&gt;&amp;lt;app-header&amp;gt;&amp;lt;/app</summary>
+      
+    
+    
+    
+    <category term="Angular" scheme="https://biancachien.github.io/categories/Angular/"/>
+    
+    
+    <category term="Angular" scheme="https://biancachien.github.io/tags/Angular/"/>
+    
+  </entry>
   
   <entry>
     <title>Angular 07- 範本參考變數(Template reference variables)</title>

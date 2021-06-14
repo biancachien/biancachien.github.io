@@ -227,4 +227,18 @@
         <tag>Angular</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Angular 08- 指令類型(一)-元件型指令(Component Directives)</title>
+    <url>/2021/06/13/Angular/Angular-note-08/</url>
+    <content><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><ul>
+<li>語法：<br><code>&lt;app-header&gt;&lt;/app-header&gt;</code><br><code>&lt;app-footer&gt;&lt;/app-footer&gt;</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Angular</category>
+      </categories>
+      <tags>
+        <tag>Angular</tag>
+      </tags>
+  </entry>
 </search>
