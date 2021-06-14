@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"biancachien.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="這是一個不存在的頁面很抱歉，你目前存取的頁面並不存在。 預計將在 5 秒後返回首頁。 或 點這裡 返回首頁。  let countTime &#x3D; 5;  function count() {      document.getElementById(&#39;timeout&#39;).textContent &#x3D; countTime;   countTime -&#x3D; 1;   if(countTime &#x3D;&#x3D;&#x3D; 0">
-<meta property="og:type" content="website">
-<meta property="og:title" content="404">
-<meta property="og:url" content="https://biancachien.github.io/404.html">
+  <meta name="description" content="雙向繫結(Two-Way Binding)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Angular 06- 資料繫結方法(四) - 雙向繫結(Two-Way Binding)">
+<meta property="og:url" content="https://biancachien.github.io/2021/06/13/Angular/Angular-note-06/index.html">
 <meta property="og:site_name" content="FrontEndDaily">
-<meta property="og:description" content="這是一個不存在的頁面很抱歉，你目前存取的頁面並不存在。 預計將在 5 秒後返回首頁。 或 點這裡 返回首頁。  let countTime &#x3D; 5;  function count() {      document.getElementById(&#39;timeout&#39;).textContent &#x3D; countTime;   countTime -&#x3D; 1;   if(countTime &#x3D;&#x3D;&#x3D; 0">
+<meta property="og:description" content="雙向繫結(Two-Way Binding)">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-06-12T18:01:35.000Z">
-<meta property="article:modified_time" content="2021-06-12T08:36:32.172Z">
+<meta property="article:published_time" content="2021-06-14T05:57:19.000Z">
+<meta property="article:modified_time" content="2021-06-14T06:10:00.768Z">
 <meta property="article:author" content="前端小白">
-<meta property="article:tag" content="Frontend Angular TypeScript JavaScript">
+<meta property="article:tag" content="Angular">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://biancachien.github.io/404">
+<link rel="canonical" href="https://biancachien.github.io/2021/06/13/Angular/Angular-note-06/">
 
 
 <script id="page-configurations">
@@ -41,13 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-TW'
   };
 </script>
 
-  <title>404 | FrontEndDaily
-</title>
+  <title>Angular 06- 資料繫結方法(四) - 雙向繫結(Two-Way Binding) | FrontEndDaily</title>
   
 
 
@@ -180,64 +179,102 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-TW">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://biancachien.github.io/2021/06/13/Angular/Angular-note-06/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="前端小白">
+      <meta itemprop="description" content="Happy Coding!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FrontEndDaily">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Angular 06- 資料繫結方法(四) - 雙向繫結(Two-Way Binding)
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">404
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
 
-<div class="post-meta">
-  
+              <time title="創建時間：2021-06-13 21:57:19 / 修改時間：22:10:00" itemprop="dateCreated datePublished" datetime="2021-06-13T21:57:19-08:00">2021-06-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Angular/" itemprop="url" rel="index"><span itemprop="name">Angular</span></a>
+                </span>
+            </span>
 
-</div>
+          
+            <div class="post-description">雙向繫結(Two-Way Binding)</div>
 
-</header>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      
-      
-      <div class="post-body">
-          <!-- markdownlint-disable MD039 MD033 -->
+        <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><ul>
+<li><p>語法： <code>[(ngModel)] = &quot;property&quot;</code></p>
+</li>
+<li><p>概念：雙向繫結，為屬性繫結和事件繫結的結合體，由template(html)和component(ts)雙向綁定。但效能可能會稍差一點。</p>
+</li>
+</ul>
+<h2 id="運用"><a href="#運用" class="headerlink" title="運用"></a><strong>運用</strong></h2><p><strong>HTML</strong></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;widget search&quot;</span>&gt;</span><br><span class="line">  &lt;div class=&quot;widget-content&quot;&gt;</span><br><span class="line">     &lt;div id=&quot;searchbox&quot;&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; [(ngModel)]=&quot;keyword&quot; (keyup.escape)=&quot;keywordReset()&quot; aceholder=&quot;請輸入搜尋關鍵字&quot; accesskey=&quot;s&quot;&gt;</span><br><span class="line">        &lt;input type=&quot;button&quot; value=&quot;搜尋&quot; id=&quot;searchbutton&quot;&gt;</span><br><span class="line">        &lt;br&gt;關鍵字：&#123;&#123; keyword &#125;&#125; 目前字數：&#123;&#123; keyword.length &#125;&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
-<h2 id="這是一個不存在的頁面"><a href="#這是一個不存在的頁面" class="headerlink" title="這是一個不存在的頁面"></a>這是一個不存在的頁面</h2><p>很抱歉，你目前存取的頁面並不存在。</p>
-<p>預計將在 <span id="timeout">5</span> 秒後返回首頁。</p>
-<p>或 <strong><a target="_blank" rel="noopener" href="https://hsiangfeng.github.io/">點這裡</a></strong> 返回首頁。</p>
-<script>
-let countTime = 5;
-
-function count() {
-  
-  document.getElementById('timeout').textContent = countTime;
-  countTime -= 1;
-  if(countTime === 0){
-    location.href = 'https://biancachien.github.io/';
-  }
-  setTimeout(() => {
-    count();
-  }, 1000);
-}
-
-count();
-</script>
-      </div>
-      
-      
-      
+<p><strong>TS</strong></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; NgModule &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/core&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; FormsModule &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/forms&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; BrowserModule &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/platform-browser&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; AppRoutingModule &#125; <span class="keyword">from</span> <span class="string">&#x27;./app-routing.module&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; AppComponent &#125; <span class="keyword">from</span> <span class="string">&#x27;./app.component&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Page2Component &#125; <span class="keyword">from</span> <span class="string">&#x27;./page2/page2.component&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">@NgModule</span>(&#123;</span><br><span class="line">  <span class="attr">declarations</span>: [</span><br><span class="line">    AppComponent,</span><br><span class="line">    Page2Component</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">imports</span>: [</span><br><span class="line">    BrowserModule,</span><br><span class="line">    AppRoutingModule,</span><br><span class="line">    FormsModule</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">providers</span>: [],</span><br><span class="line">  <span class="attr">bootstrap</span>: [AppComponent]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">AppModule</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
     </div>
-    
 
     
     
     
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Angular/" rel="tag"># Angular</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/13/Angular/Angular-note-05/" rel="prev" title="Angular 05- 資料繫結-小練習">
+      <i class="fa fa-chevron-left"></i> Angular 05- 資料繫結-小練習
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
 
 
           </div>
@@ -288,7 +325,7 @@ count();
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%99%E6%98%AF%E4%B8%80%E5%80%8B%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E9%A0%81%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">這是一個不存在的頁面</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%8B%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">運用</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
