@@ -198,7 +198,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/13/Angular/Angular-note-08/" class="post-title-link" itemprop="url">Angular 08- 指令類型(一)-元件型指令(Component Directives)</a>
+            <a href="/2021/06/13/Angular/Angular-note-08/" class="post-title-link" itemprop="url">Angular 08- 指令類型(一) - 元件型指令(Component Directives)</a>
         </h2>
 
         <div class="post-meta">
@@ -209,7 +209,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2021-06-13 23:27:13 / 修改時間：23:27:45" itemprop="dateCreated datePublished" datetime="2021-06-13T23:27:13-08:00">2021-06-13</time>
+              <time title="創建時間：2021-06-13 23:27:13 / 修改時間：23:43:00" itemprop="dateCreated datePublished" datetime="2021-06-13T23:27:13-08:00">2021-06-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -232,10 +232,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><ul>
-<li>語法：<br><code>&lt;app-header&gt;&lt;/app-header&gt;</code><br><code>&lt;app-footer&gt;&lt;/app-footer&gt;</code></li>
-</ul>
-
+          <p>元件型指令</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/13/Angular/Angular-note-08/">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -279,7 +284,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2021-06-13 23:04:53 / 修改時間：23:05:11" itemprop="dateCreated datePublished" datetime="2021-06-13T23:04:53-08:00">2021-06-13</time>
+              <time title="創建時間：2021-06-13 23:04:53 / 修改時間：23:43:08" itemprop="dateCreated datePublished" datetime="2021-06-13T23:04:53-08:00">2021-06-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -302,30 +307,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h2><ul>
-<li>語法：<code>#名稱</code></li>
-<li>僅能在Template使用</li>
-<li>可在Template的任意HTML標籤套用</li>
-<li>該名稱為區域變數將會儲存該標籤的DOM物件</li>
-<li>可透過事件繫結方式，將任意DOM物件中的任意屬性傳回元件類別中(component class)</li>
-<li>使用#為語法糖(#name等於ref-name)</li>
-<li>建立的名稱盡量不要和template的property名稱衝突</li>
-</ul>
-<h2 id="運用在DOM物件上"><a href="#運用在DOM物件上" class="headerlink" title="運用在DOM物件上"></a><strong>運用在DOM物件上</strong></h2><p><strong>HTML</strong></p>
-<ul>
-<li>#tkeyword</li>
-<li>目前字數：<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;widget search&quot;</span>&gt;</span><br><span class="line">  &lt;div class=&quot;widget-content&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;searchbox&quot;&gt;</span><br><span class="line">      &lt;input type=&quot;text&quot; #tkeyword [(ngModel)]=&quot;keyword&quot; (keyup.escape)=&quot;keywordReset()&quot; placeholder=&quot;請輸入搜尋關鍵字&quot;</span><br><span class="line">                accesskey=&quot;s&quot;&gt;</span><br><span class="line">      &lt;input type=&quot;button&quot; value=&quot;搜尋&quot; id=&quot;searchbutton&quot;&gt;</span><br><span class="line">      &lt;br&gt;關鍵字：&#123;&#123; keyword &#125;&#125; 目前字數：&#123;&#123; tkeyword.value.length &#125;&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="運用在directive上"><a href="#運用在directive上" class="headerlink" title="運用在directive上"></a><strong>運用在directive上</strong></h2><ul>
-<li>將hearder移建另外一個新建的component</li>
-<li>原html上只需放：</li>
-<li>#tHeader</li>
-<li>(click)=”tHeader.title = ‘title changed’”</li>
-</ul>
-<p><strong>HTML</strong></p>
-<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;app-header #tHeader&gt;&lt;/app-header&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- CONTAINER START--&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span> (<span class="attr">click</span>)=<span class="string">&quot;tHeader.title = &#x27;title changed&#x27;&quot;</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p><strong>TS</strong><br>亦須將原header需用到的功能，搬至新的component</p>
-
+          <p>範本參考變數</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/13/Angular/Angular-note-07/">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
